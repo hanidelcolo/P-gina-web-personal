@@ -1,10 +1,33 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
 .contenedor1 {
+    display: flex;
     background-color: rgb(29, 71, 184);
+    padding: 15px;
 }
 .logo {
     background-color: orange;
     border-radius: 9px;
-    height: 30px;
-    width: 30px;
-    
+    height: 35px;
+    width: 35px;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.nombremio {
+    color: white;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+}
+
+.navegación {
+    background-color: rgb(29, 71, 184);
+    display: flex;
+    justify-content: space-between;
 }
