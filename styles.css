@@ -1,45 +1,116 @@
+:root {
+    --azul-principal: rgb(24, 56, 145);
+    --azul-gradiente: rgb(53, 128, 240);
+    --naranja: orange;
+    --texto: #1E293B;
+    --fondo-gris: #F8FAFC;
+    --blanco: #FFFFFF;
+}
 * {
 box-sizing: border-box;
 margin: 0;
 padding: 0;
 }
-.contenedor1 {
-    display: flex;
-    background-color: rgb(24, 56, 145);
-    padding: 15px;
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: var(--texto);
+    background-color: rgb(255, 254, 254);
+    line-height: 1.6;
 }
+
+header {
+    background-color: var(--azul-principal);
+    padding: 15px 5%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(24, 56, 145);
+}
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .logo {
     background-color: orange;
     border-radius: 9px;
-    height: 35px;
-    width: 35px;
-    font-size: 23px;
+    height: 50px;
+    width: 50px;
+    font-size: 27px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: white;
     font-weight: bold;
     display: flex;
+    align-items: center;
+    color: white;
     justify-content: center;
 }
-.nombremio {
+
+.nombre-sitio {
     color: white;
-    font-size: 24px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 13px;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Segoe UI', sans-serif;
 }
 
+
 .navbar {
-    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 23px;
+}
+
+
+.hero {
+    display: flex; 
     justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, rgb(24, 56, 145), rgb(53, 128, 240)); 
+    color: white;
 }
-.foto-avatar {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-top: 20px;
-    object-fit: cover;
+
+.hero-info {
+    flex: 1; 
+    max-width: 800px;
 }
-.contenedor2 {
+
+.hero-info h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero-info h1 span {
+    color: orange; 
+}
+
+.hero-info h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.hero-info p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.hero-imagen {
+    flex: 0.5;
     display: flex;
-    flex-direction: column;
-    padding: 40px;
-    background: linear-gradient(80deg, rgb(28, 65, 167), rgb(53, 128, 240))
+    justify-content: center; 
+}
+
+.foto-avatar {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
 }
