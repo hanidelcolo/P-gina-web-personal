@@ -1,8 +1,8 @@
 :root {
     --azul-principal: rgb(24, 56, 145);
     --azul-gradiente: rgb(53, 128, 240);
-    --naranja: orange;
-    --texto: #1E293B;
+    --naranja: rgb(255, 123, 0);
+    --texto: #484e57;
     --fondo-gris: #F8FAFC;
     --blanco: #FFFFFF;
 }
@@ -16,7 +16,8 @@ body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     color: var(--texto);
     background-color: rgb(255, 254, 254);
-    line-height: 1.6;
+    line-height: 1.7;
+    font-weight: 600;
 }
 
 header {
@@ -118,4 +119,79 @@ header {
     height: 280px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.seccion-sobremi {
+    padding: 80px 10%;
+    background-color: var(--fondo-gris);
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 27px;
+    color: var(--azul-principal);
+}
+.sub {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 21px;
+    color: gray;
+    font-weight: 500;
+}
+.linea-naranja {
+    width: 80px;
+    height: 6px;
+    background-color: var(--naranja);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.contenido-sobremi {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.bio-texto {
+    flex: 2;
+}
+
+.bio-texto p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cita-famosa {
+    background-color: #f3efeb;
+    padding: 20px;
+    border-left: 5px solid var(--naranja);
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.tarjeta-datos {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta-datos h3 {
+    margin-bottom: 15px;
+    color:rgb(24, 56, 145); 
+    font-size: 23px;
+}
+
+.lista-datos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-datos li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 20px;
 }
