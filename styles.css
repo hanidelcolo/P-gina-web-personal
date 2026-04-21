@@ -11,6 +11,7 @@ box-sizing: border-box;
 margin: 0;
 padding: 0;
 }
+
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     color: var(--texto);
@@ -58,12 +59,16 @@ header {
     font-family: 'Segoe UI', sans-serif;
 }
 
-
 .navbar {
-    color: white;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: rgba(255, 255, 255, 0.89);
     text-decoration: none;
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 
