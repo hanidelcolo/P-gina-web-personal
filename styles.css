@@ -229,6 +229,18 @@ header {
     font-size: 18px;
 }
 
+.tabla-skills tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.tabla-skills tbody tr:nth-child(even) {
+    background-color: #23252504; 
+}
+
+.tabla-skills tbody tr:last-child td {
+    border-bottom: none;
+}
+
 .barra-nivel {
     background-color: #e2e8f0; 
     height: 12px;
@@ -240,16 +252,37 @@ header {
 .barra-nivel div {
     height: 100%;
     border-radius: 10px;
+    transition: width 1s ease-in-out;
 }
 
 
-.nivel-html { width: 20%; background-color: #1e3a8a; }
-.nivel-css { width: 10%; background-color: #22c55e; }
-.nivel-github { width: 30%; background-color: #8b5cf6; }
-.nivel-react { width: 15%; background-color: #f59e0b; }
-.nivel-javascript { width: 15%; background-color: #ef4444; }
+.nivel-html { 
+    width: 20%; 
+    background: linear-gradient(90deg, #1e3a8a, #3b82f6); 
+}
+
+.nivel-css { 
+    width: 10%; 
+    background: linear-gradient(90deg, #15803d, #22c55e); 
+}
+
+.nivel-javascript { 
+    width: 10%; 
+    background: linear-gradient(90deg, #b91c1c, #ef4444); 
+}
+
+.nivel-github { 
+    width: 15%; 
+    background: linear-gradient(90deg, #6d28d9, #8b5cf6); 
+}
+
+.nivel-react { 
+    width: 15%; 
+    background: linear-gradient(90deg, #b45309, #f59e0b); 
+}
 
 /* Deben llevar un gradidante */
+
 
 .contenedor-listas {
     display: flex;
