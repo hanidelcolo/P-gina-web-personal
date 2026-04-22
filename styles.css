@@ -29,14 +29,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1800px;
+    margin: 1 auto;
     background-color: var(--azul-principal);
 }
 .marca {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
+    
 }
 
 .logo-img {
@@ -44,6 +45,7 @@ header {
     height: 50px;
     width: 50px;
 }
+
 
 .nombre-sitio {
     color: white;
@@ -54,14 +56,15 @@ header {
 
 .navbar {
     display: flex;
-    gap: 25px;
+    gap: 30px;
+    
 }
 
 .navbar a {
     color: rgba(255, 255, 255, 0.89);
     text-decoration: none;
-    margin-left: 20px;
     font-size: 20px;
+    margin-left: 30px;
 }
 
 
@@ -111,6 +114,8 @@ header {
     height: 280px;
     border-radius: 50%;
     object-fit: cover;
+    border-style:outset;
+    border-color: var(--azul-gradiente);
 }
 
 .seccion-sobremi {
