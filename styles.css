@@ -243,10 +243,13 @@ header {
 }
 
 
-.nivel-html { width: 40%; background-color: #1e3a8a; }
-.nivel-css { width: 20%; background-color: #22c55e; }
-.nivel-github { width: 50%; background-color: #8b5cf6; }
+.nivel-html { width: 20%; background-color: #1e3a8a; }
+.nivel-css { width: 10%; background-color: #22c55e; }
+.nivel-github { width: 30%; background-color: #8b5cf6; }
+.nivel-react { width: 15%; background-color: #f59e0b; }
+.nivel-javascript { width: 15%; background-color: #ef4444; }
 
+/* Deben llevar un gradidante */
 
 .contenedor-listas {
     display: flex;
@@ -292,3 +295,83 @@ header {
     color: var(--texto);
 }
 
+/* La tabla debe ser blanca y vainilla */
+
+.seccion-proyectos {
+    padding: 80px 10%;
+    background-color: var(--fondo-gris);
+}
+
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.color-purpura { background: linear-gradient(135deg, #818cf8, #6366f1); }
+.color-rosado  { background: linear-gradient(135deg, #fb7185, #f43f5e); }
+.color-cian    { background: linear-gradient(135deg, #22d3ee, #0ea5e9); }
+.color-verde   { background: linear-gradient(135deg, #4ade80, #10b981); }
+.color-naranja { background: linear-gradient(135deg, #fbbf24, #f59e0b); }
+.color-lavanda { background: linear-gradient(135deg, #c084fc, #a855f7); }
+
+
+.card-proyecto {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.visual {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+}
+
+figcaption {
+    padding: 25px;
+}
+
+.tag {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+figcaption h3 {
+    font-size: 24px;
+    color: var(--azul-principal);
+    margin-bottom: 12px;
+}
+
+figcaption p {
+    font-size: 16px;
+    color: #475569;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.repo-link {
+    color: var(--azul-principal);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.repo-link:hover {
+    text-decoration: underline;
+}
